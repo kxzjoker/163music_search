@@ -1,0 +1,797 @@
+{
+    "result": {
+      "searchQcReminder": null,
+      "songs": [
+        {
+          "name": "海阔天空",
+          "id": 1357375695,
+          "pst": 0,
+          "t": 0,
+          "ar": [
+            {
+              "id": 11127,
+              "name": "Beyond",
+              "tns": [
+                "超越"
+              ],
+              "alias": []
+            }
+          ],
+          "alia": [],
+          "pop": 100,
+          "st": 0,
+          "rt": "",
+          "fee": 1,
+          "v": 45,
+          "crbt": null,
+          "cf": "",
+          "al": {
+            "id": 78372827,
+            "name": "华纳廿三周年纪念精选系列 - B﻿eyond",
+            "picUrl": "http://p2.music.126.net/q6cm6Pk70YArijk1_QDoEg==/109951163984013003.jpg",
+            "tns": [],
+            "pic_str": "109951163984013003",
+            "pic": 109951163984013003
+          },
+          "dt": 239560,
+          "h": {
+            "br": 320000,
+            "fid": 0,
+            "size": 9584893,
+            "vd": 3991,
+            "sr": 44100
+          },
+          "m": {
+            "br": 192000,
+            "fid": 0,
+            "size": 5750953,
+            "vd": 6570,
+            "sr": 44100
+          },
+          "l": {
+            "br": 128000,
+            "fid": 0,
+            "size": 3833983,
+            "vd": 8220,
+            "sr": 44100
+          },
+          "sq": {
+            "br": 1508256,
+            "fid": 0,
+            "size": 45164780,
+            "vd": 4001,
+            "sr": 44100
+          },
+          "hr": null,
+          "a": null,
+          "cd": "01",
+          "no": 1,
+          "rtUrl": null,
+          "ftype": 0,
+          "rtUrls": [],
+          "djId": 0,
+          "copyright": 1,
+          "s_id": 0,
+          "mark": 17179877376,
+          "originCoverType": 1,
+          "originSongSimpleData": null,
+          "tagPicList": null,
+          "resourceState": true,
+          "version": 12,
+          "songJumpInfo": null,
+          "entertainmentTags": null,
+          "single": 0,
+          "noCopyrightRcmd": null,
+          "rtype": 0,
+          "rurl": null,
+          "mst": 9,
+          "cp": 7002,
+          "mv": 5501497,
+          "publishTime": 737308800000,
+          "privilege": {
+            "id": 1357375695,
+            "fee": 1,
+            "payed": 0,
+            "st": 0,
+            "pl": 0,
+            "dl": 0,
+            "sp": 7,
+            "cp": 1,
+            "subp": 1,
+            "cs": false,
+            "maxbr": 999000,
+            "fl": 0,
+            "toast": false,
+            "flag": 1284,
+            "preSell": false,
+            "playMaxbr": 999000,
+            "downloadMaxbr": 999000,
+            "maxBrLevel": "lossless",
+            "playMaxBrLevel": "lossless",
+            "downloadMaxBrLevel": "lossless",
+            "plLevel": "none",
+            "dlLevel": "none",
+            "flLevel": "none",
+            "rscl": null,
+            "freeTrialPrivilege": {
+              "resConsumable": true,
+              "userConsumable": false,
+              "listenType": null,
+              "cannotListenReason": null,
+              "playReason": null,
+              "freeLimitTagType": null
+            },
+            "rightSource": 0,
+            "chargeInfoList": [
+              {
+                "rate": 128000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              },
+              {
+                "rate": 192000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              },
+              {
+                "rate": 320000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              },
+              {
+                "rate": 999000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              }
+            ],
+            "code": 0,
+            "message": null,
+            "plLevels": null,
+            "dlLevels": null,
+            "ignoreCache": null
+          }
+        },
+        {
+          "name": "海阔天空",
+          "id": 1357374736,
+          "pst": 0,
+          "t": 0,
+          "ar": [
+            {
+              "id": 11127,
+              "name": "Beyond",
+              "tns": [
+                "超越"
+              ],
+              "alias": []
+            }
+          ],
+          "alia": [],
+          "pop": 100,
+          "st": 0,
+          "rt": "",
+          "fee": 8,
+          "v": 45,
+          "crbt": null,
+          "cf": "",
+          "al": {
+            "id": 78372154,
+            "name": "华纳超极品音色系列",
+            "picUrl": "http://p2.music.126.net/qnQ93WnZHACVvIM14c4sAQ==/109951163984007061.jpg",
+            "tns": [],
+            "pic_str": "109951163984007061",
+            "pic": 109951163984007061
+          },
+          "dt": 239560,
+          "h": {
+            "br": 320000,
+            "fid": 0,
+            "size": 9584893,
+            "vd": 3991,
+            "sr": 44100
+          },
+          "m": {
+            "br": 192000,
+            "fid": 0,
+            "size": 5750953,
+            "vd": 6570,
+            "sr": 44100
+          },
+          "l": {
+            "br": 128000,
+            "fid": 0,
+            "size": 3833983,
+            "vd": 8220,
+            "sr": 44100
+          },
+          "sq": {
+            "br": 1508256,
+            "fid": 0,
+            "size": 45164780,
+            "vd": 5513,
+            "sr": 44100
+          },
+          "hr": null,
+          "a": null,
+          "cd": "01",
+          "no": 6,
+          "rtUrl": null,
+          "ftype": 0,
+          "rtUrls": [],
+          "djId": 0,
+          "copyright": 1,
+          "s_id": 0,
+          "mark": 17179877376,
+          "originCoverType": 1,
+          "originSongSimpleData": null,
+          "tagPicList": null,
+          "resourceState": true,
+          "version": 12,
+          "songJumpInfo": null,
+          "entertainmentTags": null,
+          "single": 0,
+          "noCopyrightRcmd": null,
+          "rtype": 0,
+          "rurl": null,
+          "mst": 9,
+          "cp": 7002,
+          "mv": 0,
+          "publishTime": 712512000000,
+          "privilege": {
+            "id": 1357374736,
+            "fee": 8,
+            "payed": 0,
+            "st": 0,
+            "pl": 128000,
+            "dl": 0,
+            "sp": 7,
+            "cp": 1,
+            "subp": 1,
+            "cs": false,
+            "maxbr": 999000,
+            "fl": 320000,
+            "toast": false,
+            "flag": 260,
+            "preSell": false,
+            "playMaxbr": 999000,
+            "downloadMaxbr": 999000,
+            "maxBrLevel": "lossless",
+            "playMaxBrLevel": "lossless",
+            "downloadMaxBrLevel": "lossless",
+            "plLevel": "standard",
+            "dlLevel": "none",
+            "flLevel": "exhigh",
+            "rscl": null,
+            "freeTrialPrivilege": {
+              "resConsumable": false,
+              "userConsumable": false,
+              "listenType": null,
+              "cannotListenReason": null,
+              "playReason": null,
+              "freeLimitTagType": null
+            },
+            "rightSource": 0,
+            "chargeInfoList": [
+              {
+                "rate": 128000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 192000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 320000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 999000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              }
+            ],
+            "code": 0,
+            "message": null,
+            "plLevels": null,
+            "dlLevels": null,
+            "ignoreCache": null
+          }
+        },
+        {
+          "name": "海阔天空",
+          "id": 347230,
+          "pst": 0,
+          "t": 0,
+          "ar": [
+            {
+              "id": 11127,
+              "name": "Beyond",
+              "tns": [
+                "超越"
+              ],
+              "alias": []
+            }
+          ],
+          "alia": [],
+          "pop": 100,
+          "st": 0,
+          "rt": "600902000004240302",
+          "fee": 1,
+          "v": 153,
+          "crbt": null,
+          "cf": "",
+          "al": {
+            "id": 34209,
+            "name": "海阔天空",
+            "picUrl": "http://p2.music.126.net/iAwVf8ag_45csIUuh1wSZg==/109951168912558470.jpg",
+            "tns": [],
+            "pic_str": "109951168912558470",
+            "pic": 109951168912558470
+          },
+          "dt": 326000,
+          "h": {
+            "br": 320001,
+            "fid": 0,
+            "size": 13042460,
+            "vd": -5628,
+            "sr": 44100
+          },
+          "m": {
+            "br": 192001,
+            "fid": 0,
+            "size": 7825493,
+            "vd": -3050,
+            "sr": 44100
+          },
+          "l": {
+            "br": 128001,
+            "fid": 0,
+            "size": 5217010,
+            "vd": -1489,
+            "sr": 44100
+          },
+          "sq": {
+            "br": 797831,
+            "fid": 0,
+            "size": 32511640,
+            "vd": -5286,
+            "sr": 44100
+          },
+          "hr": null,
+          "a": null,
+          "cd": "1",
+          "no": 1,
+          "rtUrl": null,
+          "ftype": 0,
+          "rtUrls": [],
+          "djId": 0,
+          "copyright": 1,
+          "s_id": 0,
+          "mark": 17179877376,
+          "originCoverType": 1,
+          "originSongSimpleData": null,
+          "tagPicList": null,
+          "resourceState": true,
+          "version": 120,
+          "songJumpInfo": null,
+          "entertainmentTags": null,
+          "single": 0,
+          "noCopyrightRcmd": null,
+          "rtype": 0,
+          "rurl": null,
+          "mst": 9,
+          "cp": 1416737,
+          "mv": 376199,
+          "publishTime": 747504000000,
+          "tns": [
+            "Boundless Oceans, Vast Skies"
+          ],
+          "privilege": {
+            "id": 347230,
+            "fee": 1,
+            "payed": 0,
+            "st": 0,
+            "pl": 0,
+            "dl": 0,
+            "sp": 7,
+            "cp": 1,
+            "subp": 1,
+            "cs": false,
+            "maxbr": 999000,
+            "fl": 0,
+            "toast": false,
+            "flag": 1028,
+            "preSell": false,
+            "playMaxbr": 999000,
+            "downloadMaxbr": 999000,
+            "maxBrLevel": "lossless",
+            "playMaxBrLevel": "lossless",
+            "downloadMaxBrLevel": "lossless",
+            "plLevel": "none",
+            "dlLevel": "none",
+            "flLevel": "none",
+            "rscl": null,
+            "freeTrialPrivilege": {
+              "resConsumable": true,
+              "userConsumable": false,
+              "listenType": null,
+              "cannotListenReason": null,
+              "playReason": null,
+              "freeLimitTagType": null
+            },
+            "rightSource": 0,
+            "chargeInfoList": [
+              {
+                "rate": 128000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              },
+              {
+                "rate": 192000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              },
+              {
+                "rate": 320000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              },
+              {
+                "rate": 999000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              }
+            ],
+            "code": 0,
+            "message": null,
+            "plLevels": null,
+            "dlLevels": null,
+            "ignoreCache": null
+          }
+        },
+        {
+          "name": "海阔天空(Live)",
+          "id": 346013,
+          "pst": 0,
+          "t": 0,
+          "ar": [
+            {
+              "id": 3080,
+              "name": "黄贯中",
+              "tns": [],
+              "alias": [
+                "Paul Wong"
+              ],
+              "alia": [
+                "Paul Wong"
+              ]
+            },
+            {
+              "id": 6094,
+              "name": "叶世荣",
+              "tns": [],
+              "alias": []
+            },
+            {
+              "id": 3116,
+              "name": "黄家强",
+              "tns": [],
+              "alias": [
+                "Steve Wong"
+              ],
+              "alia": [
+                "Steve Wong"
+              ]
+            }
+          ],
+          "alia": [],
+          "pop": 95,
+          "st": 0,
+          "rt": "",
+          "fee": 8,
+          "v": 74,
+          "crbt": null,
+          "cf": "",
+          "al": {
+            "id": 34106,
+            "name": "别了家驹十五载 海阔天空音乐会",
+            "picUrl": "http://p2.music.126.net/RrI92ZaMpIo8mehY4s9maw==/109951166293212371.jpg",
+            "tns": [],
+            "pic_str": "109951166293212371",
+            "pic": 109951166293212371
+          },
+          "dt": 366973,
+          "h": {
+            "br": 320000,
+            "fid": 0,
+            "size": 14681905,
+            "vd": -59814,
+            "sr": 44100
+          },
+          "m": {
+            "br": 192000,
+            "fid": 0,
+            "size": 8809160,
+            "vd": -57247,
+            "sr": 44100
+          },
+          "l": {
+            "br": 128000,
+            "fid": 0,
+            "size": 5872788,
+            "vd": -55627,
+            "sr": 44100
+          },
+          "sq": {
+            "br": 1215000,
+            "fid": 0,
+            "size": 43965014,
+            "vd": -59805,
+            "sr": 44100
+          },
+          "hr": null,
+          "a": null,
+          "cd": "01",
+          "no": 27,
+          "rtUrl": null,
+          "ftype": 0,
+          "rtUrls": [],
+          "djId": 0,
+          "copyright": 1,
+          "s_id": 0,
+          "mark": 17179877376,
+          "originCoverType": 0,
+          "originSongSimpleData": null,
+          "tagPicList": null,
+          "resourceState": true,
+          "version": 41,
+          "songJumpInfo": null,
+          "entertainmentTags": null,
+          "single": 0,
+          "noCopyrightRcmd": null,
+          "rtype": 0,
+          "rurl": null,
+          "mst": 9,
+          "cp": 7003,
+          "mv": 10981118,
+          "publishTime": 1218556800000,
+          "privilege": {
+            "id": 346013,
+            "fee": 8,
+            "payed": 0,
+            "st": 0,
+            "pl": 128000,
+            "dl": 0,
+            "sp": 7,
+            "cp": 1,
+            "subp": 1,
+            "cs": false,
+            "maxbr": 999000,
+            "fl": 320000,
+            "toast": false,
+            "flag": 260,
+            "preSell": false,
+            "playMaxbr": 999000,
+            "downloadMaxbr": 999000,
+            "maxBrLevel": "lossless",
+            "playMaxBrLevel": "lossless",
+            "downloadMaxBrLevel": "lossless",
+            "plLevel": "standard",
+            "dlLevel": "none",
+            "flLevel": "exhigh",
+            "rscl": null,
+            "freeTrialPrivilege": {
+              "resConsumable": false,
+              "userConsumable": false,
+              "listenType": null,
+              "cannotListenReason": null,
+              "playReason": null,
+              "freeLimitTagType": null
+            },
+            "rightSource": 0,
+            "chargeInfoList": [
+              {
+                "rate": 128000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 192000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 320000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 999000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              }
+            ],
+            "code": 0,
+            "message": null,
+            "plLevels": null,
+            "dlLevels": null,
+            "ignoreCache": null
+          }
+        },
+        {
+          "name": "海阔天空 (Live)",
+          "id": 28875146,
+          "pst": 0,
+          "t": 0,
+          "ar": [
+            {
+              "id": 11127,
+              "name": "Beyond",
+              "tns": [
+                "超越"
+              ],
+              "alias": []
+            }
+          ],
+          "alia": [],
+          "pop": 100,
+          "st": 0,
+          "rt": null,
+          "fee": 8,
+          "v": 62,
+          "crbt": null,
+          "cf": "",
+          "al": {
+            "id": 2921018,
+            "name": "Beyond The Story Live 2005",
+            "picUrl": "http://p2.music.126.net/0a2NayHgHaf5WQTEYoHahg==/109951163972046213.jpg",
+            "tns": [],
+            "pic_str": "109951163972046213",
+            "pic": 109951163972046213
+          },
+          "dt": 369400,
+          "h": {
+            "br": 320000,
+            "fid": 0,
+            "size": 14779080,
+            "vd": -28631,
+            "sr": 44100
+          },
+          "m": {
+            "br": 192000,
+            "fid": 0,
+            "size": 8867466,
+            "vd": -26083,
+            "sr": 44100
+          },
+          "l": {
+            "br": 128000,
+            "fid": 0,
+            "size": 5911658,
+            "vd": -24520,
+            "sr": 44100
+          },
+          "sq": {
+            "br": 907960,
+            "fid": 0,
+            "size": 41931780,
+            "vd": -28617,
+            "sr": 44100
+          },
+          "hr": null,
+          "a": null,
+          "cd": "1",
+          "no": 13,
+          "rtUrl": null,
+          "ftype": 0,
+          "rtUrls": [],
+          "djId": 0,
+          "copyright": 2,
+          "s_id": 0,
+          "mark": 17179877376,
+          "originCoverType": 1,
+          "originSongSimpleData": null,
+          "tagPicList": null,
+          "resourceState": true,
+          "version": 29,
+          "songJumpInfo": null,
+          "entertainmentTags": null,
+          "single": 0,
+          "noCopyrightRcmd": null,
+          "rtype": 0,
+          "rurl": null,
+          "mst": 9,
+          "cp": 7003,
+          "mv": 5347246,
+          "publishTime": 1112284800007,
+          "privilege": {
+            "id": 28875146,
+            "fee": 8,
+            "payed": 0,
+            "st": 0,
+            "pl": 128000,
+            "dl": 0,
+            "sp": 7,
+            "cp": 1,
+            "subp": 1,
+            "cs": false,
+            "maxbr": 999000,
+            "fl": 320000,
+            "toast": false,
+            "flag": 4,
+            "preSell": false,
+            "playMaxbr": 999000,
+            "downloadMaxbr": 999000,
+            "maxBrLevel": "lossless",
+            "playMaxBrLevel": "lossless",
+            "downloadMaxBrLevel": "lossless",
+            "plLevel": "standard",
+            "dlLevel": "none",
+            "flLevel": "exhigh",
+            "rscl": null,
+            "freeTrialPrivilege": {
+              "resConsumable": false,
+              "userConsumable": false,
+              "listenType": null,
+              "cannotListenReason": null,
+              "playReason": null,
+              "freeLimitTagType": null
+            },
+            "rightSource": 0,
+            "chargeInfoList": [
+              {
+                "rate": 128000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 192000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 320000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+              },
+              {
+                "rate": 999000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+              }
+            ],
+            "code": 0,
+            "message": null,
+            "plLevels": null,
+            "dlLevels": null,
+            "ignoreCache": null
+          }
+        }
+      ],
+      "songCount": 327
+    },
+    "code": 200
+  }
