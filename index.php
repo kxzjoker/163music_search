@@ -1,11 +1,14 @@
 <?php
 /**
  * 网易云音乐搜索API接口
+ * 作者：kanxizai
+ * 版本：2.0
+ * 日期：2025-05-11
  * 接收参数：
  * - name: 歌曲名称
  * - limit: 返回结果数量，默认10，范围1-100
  * - id: 歌曲ID，用于获取歌词
- * - type: 请求类型，search-搜索歌曲，lyric-获取歌词，默认search
+ * - type: 请求类型，search-搜索歌曲，lyric-获取歌词，默认search 
  */
 
 // 设置响应头
