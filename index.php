@@ -4,6 +4,8 @@
  * 接收参数：
  * - name: 歌曲名称
  * - limit: 返回结果数量，默认10，范围1-100
+ * - id: 歌曲ID，用于获取歌词
+ * - type: 请求类型，search-搜索歌曲，lyric-获取歌词，默认search
  */
 
 // 设置响应头
@@ -13,22 +15,41 @@ header('Access-Control-Allow-Methods: GET, POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
 // 获取请求参数
+$type = isset($_REQUEST['type']) ? trim($_REQUEST['type']) : 'search';
 $name = isset($_REQUEST['name']) ? trim($_REQUEST['name']) : '';
 $limit = isset($_REQUEST['limit']) ? intval($_REQUEST['limit']) : 10;
+$id = isset($_REQUEST['id']) ? trim($_REQUEST['id']) : '';
 
-// 参数验证
-if (empty($name)) {
-    echo json_encode(['code' => 400, 'message' => '请提供歌曲名称']);
-    exit;
-}
-
-// 限制limit范围在1-100之间
-$limit = max(1, min(100, $limit));
+// 生成随机IP和User-Agent，确保在一次请求中使用相同的值
+$randomIP = Rand_IP();
+$randomUserAgent = Rand_User_Agent();
 
 try {
-    // 调用搜索API
-    $result = searchMusic($name, $limit);
-    echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    // 根据请求类型调用不同的API
+    if ($type === 'lyric') {
+        // 参数验证
+        if (empty($id)) {
+            echo json_encode(['code' => 400, 'message' => '请提供歌曲ID']);
+            exit;
+        }
+        
+        // 调用获取歌词API
+        $result = getLyric($id, $randomIP, $randomUserAgent);
+        echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    } else {
+        // 参数验证
+        if (empty($name)) {
+            echo json_encode(['code' => 400, 'message' => '请提供歌曲名称']);
+            exit;
+        }
+        
+        // 限制limit范围在1-100之间
+        $limit = max(1, min(100, $limit));
+        
+        // 调用搜索API
+        $result = searchMusic($name, $limit, 0, 1, $randomIP, $randomUserAgent);
+        echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    }
 } catch (Exception $e) {
     echo json_encode(['code' => 500, 'message' => $e->getMessage()]);
 }
@@ -39,9 +60,11 @@ try {
  * @param int $limit 返回结果数量
  * @param int $offset 偏移量
  * @param int $type 搜索类型，1为单曲
+ * @param string $ip 随机IP地址
+ * @param string $userAgent 随机User-Agent
  * @return array 搜索结果
  */
-function searchMusic($keywords, $limit = 10, $offset = 0, $type = 1) {
+function searchMusic($keywords, $limit = 10, $offset = 0, $type = 1, $ip = null, $userAgent = null) {
     // 构建请求数据
     $data = [
         's' => $keywords,
@@ -54,13 +77,7 @@ function searchMusic($keywords, $limit = 10, $offset = 0, $type = 1) {
     $encryptedData = encryptParams($data);
     
     // 构建请求头
-    $headers = [
-        'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
-        'Connection: Keep-Alive',
-        'Content-Type: application/x-www-form-urlencoded',
-        'Referer: http://music.163.com',
-        'X-Real-IP: 112.88.7.213'
-    ];
+    $headers = buildRequestHeaders($ip, $userAgent);
     
     // 发送请求到网易云音乐API
     $response = sendRequest('http://music.163.com/weapi/cloudsearch/pc', $encryptedData, $headers);
@@ -229,4 +246,82 @@ function modPow($base, $exponent, $modulus) {
     
     return $result;
 }
+
+/**
+ * 获取歌词
+ * @param string $id 歌曲ID
+ * @param string $ip 随机IP地址
+ * @param string $userAgent 随机User-Agent
+ * @return array 歌词结果
+ */
+function getLyric($id, $ip = null, $userAgent = null) {
+    // 构建请求数据
+    $data = [
+        'id' => $id,
+        'lv' => -1,
+        'tv' => -1
+    ];
+    
+    // 加密参数
+    $encryptedData = encryptParams($data);
+    
+    // 构建请求头
+    $headers = buildRequestHeaders($ip, $userAgent);
+    
+    // 发送请求到网易云音乐歌词API
+    $response = sendRequest('http://music.163.com/weapi/song/lyric', $encryptedData, $headers);
+    
+    return $response;
+}
+
+/**
+ * 构建请求头
+ * @param string $ip 随机IP地址
+ * @param string $userAgent 随机User-Agent
+ * @return array 请求头数组
+ */
+function buildRequestHeaders($ip = null, $userAgent = null) {
+    // 如果未提供IP或User-Agent，则生成随机值
+    $ip = $ip ?: Rand_IP();
+    $userAgent = $userAgent ?: Rand_User_Agent();
+    
+    return [
+        "User-Agent: $userAgent",
+        'Connection: Keep-Alive',
+        'Content-Type: application/x-www-form-urlencoded',
+        'Referer: http://music.163.com',
+        "X-Real-IP: $ip",
+        "Client-IP: $ip",
+        "X-Forwarded-For: $ip"
+    ];
+}
+
+/**
+ * 新增随机IP生成函数
+ * @return string 随机IP地址
+ */
+function Rand_IP() 
+{ 
+    $ip2id = random_int(0, 255); 
+    $ip3id = random_int(0, 255); 
+    $ip4id = random_int(0, 255); 
+    $arr_1 = ["218", "218", "66", "66", "218", "218", "60", "60", "202", "204", "66", "66", "66", "59", "61", "60", "222", "221", "66", "59", "60", "60", "66", "218", "218", "62", "63", "64", "66", "66", "122", "211"]; 
+    return $arr_1[array_rand($arr_1)] . ".$ip2id.$ip3id.$ip4id"; 
+} 
+
+/**
+ * 新增随机User-Agent生成函数
+ * @return string 随机User-Agent
+ */
+function Rand_User_Agent() 
+{ 
+    $agents = [ 
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36", 
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0", 
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36", 
+        "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36", 
+        "Mozilla/5.0 (Linux; Android 13; Redmi Note 12 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36" 
+    ]; 
+    return $agents[array_rand($agents)]; 
+} 
 ?>
